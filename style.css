@@ -1,0 +1,360 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: whitesmoke;
+
+}
+.wrapper{
+    background-color: white;
+    width: 450px;
+    border-radius: 16px;
+    box-shadow: 0 0 128px 0 rgba(0,0,0,0.5),0 32px 64px -48px rgba(0,0,0,0.5);
+}
+.form{
+    padding: 25px 30px;
+}
+.form header{
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    border-bottom: 1px solid gray;
+}
+.form form{
+    margin:20px 0;
+
+}
+.form form .error-txt{
+    color: red;
+    background-color: #f8d7da;
+    border: 1px solid red;
+    padding: 8px 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+
+
+}
+
+form .name-details:first-child{
+    margin-right: 10px;
+
+}
+form .name-details:last-child{
+    margin-right: 10px;
+
+}
+.form form .field{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    margin-top: 10px;
+
+}
+.form form .name-details{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.form form .field input{
+    outline: none;
+
+}
+.form form .input input{
+    height: 40px;
+    width: 100%;
+    font-size: 16px;
+    padding: 0 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+.form form .field label{
+    font-size: 17px;
+    margin-bottom: 5px;
+    margin-top: 7px;
+}
+
+.form form .image input{
+    font-size: 17px;
+
+
+}
+.form form .button input{
+    margin-top: 13px;
+    height: 40px;
+    font-size: 17px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(37, 37, 37);
+    color: white;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.form form .button input:hover{
+    background-color: rgb(85, 84, 84);
+    color:white;
+}
+.form form .button input:active{
+    background-color: darkgray;
+    color:black;
+}
+.form .link{
+    text-align: center;
+    margin: 10px 0;
+    font-size: 17px;
+}
+.form .link .a{
+    color:#333;
+    
+}
+.form .link .a:hover{
+    text-decoration: underline;
+    color:#555;
+    
+}
+
+/* Users area css*/
+
+.users{
+    padding: 25px 30px;
+}
+.users header,.users-list a{
+    display: flex;
+    align-items: center;
+    padding: 10px 10px 20px 10px;
+    justify-content: space-between;
+    /*border: 2px solid #ddd;*/
+    border-radius: 15px;
+
+}
+.wrapper img{
+    object-fit: cover;
+}
+:is(.users,.users-list) .content
+{
+    display: flex;
+    align-items: center;
+}
+
+.users header .content img{
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+}
+:is(.users,.users-list) .details{
+    color: #000;
+    margin-left: 15px;
+}
+:is(.users,.users-list) .details span{
+    font-size: 18px;
+    font-weight: bold;
+}
+.users header .logout{
+    color: white;
+    padding: 12px 10px;
+    background: #333;
+    border-radius: 5px;
+    width: 90px;
+    height: 40px;
+    text-align: center;
+    
+
+}
+.users .search{
+    margin: 20px 0;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+}
+.users .search .text{
+    font-size: 18px;
+    
+}
+.users .search input{
+    position: absolute;
+    height: 42px;
+    width: calc(100% - 70px);
+    border: 1px solid #ccc;
+    padding: 0 13px;
+    border-radius: 10px 0 0 10px ;
+    font-size: 16px;
+    outline: none;
+    
+}
+.users .search button{
+    width: 70px;
+    height: 42px;
+    color: white;
+    background-color: #333;
+    border-radius: 0 10px 10px 0;
+    border: 1px solid #444;
+    cursor: pointer;
+}
+.users-list{
+    max-height: 350px;
+    overflow-y: auto;
+}
+.users-list::-webkit-scrollbar{
+    width:0px;
+}
+.users-list a .status{
+    font-size: 16px;
+    font-weight: 300;
+    text-align: start;
+    
+}
+.users-list a{
+    margin: 10px 0;
+    padding: 10px ;
+    transition: background-color 0.25s;
+}
+
+.users-list a:hover{
+    background-color: #ddd;
+}
+.users-list a .content img{
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+
+}
+.users-list a .content p{
+    color: #5f5f5f;
+    font-size: 14px;
+}
+/*chat area*/
+
+.chat-area header{
+    padding: 18px 30px;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.back-but{
+    padding-right: 10px;
+    font-size: 14px;
+}
+.chat-area header img{
+
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    margin-left: 15px;
+    margin-right: 10px;
+    
+
+}
+.chat-area header .details span{
+    font-size: 17px;
+    font-weight: 500;
+}
+.chat-area header .details p{
+    font-size: 14px;
+}
+.chat-box{
+
+    width: 100%;
+    height: 500px;
+    border-top: 2px solid #ddd;
+    padding: 10px 30px 20px 30px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.chat .details p{
+    margin-bottom: 20px;
+    word-wrap:break-word;
+    
+    padding: 10px;
+    
+
+}
+
+.outgoing .details{
+    position: relative;
+    display: flex;
+    padding-left: 35%;
+
+    
+
+}
+.outgoing .details p{
+    background-color: #333;
+    color: white;
+    border-radius: 15px 15px 0 15px;
+    margin-right: 5px;
+    margin-left: auto;
+    max-width: calc(100%-130px);
+}
+.incoming{
+    display: flex;
+}
+.incoming .details{
+    display: flex;
+    align-items: flex-start;
+
+}
+.incoming img{
+    height: 30px;
+    width: 30px;
+    margin-right: 5px;
+    border-radius: 50%;
+    margin-top: auto;
+    margin-bottom: 20px;
+
+
+}
+.incoming .details p{
+    background-color: #ddd;
+    color: black;
+    border-radius: 15px 15px 15px 0;
+    margin-right: 35%;
+    width: calc(100%-130px);
+}
+
+form{
+    
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+form .text{
+    font-size: 18px;
+    
+}
+form .text{
+    position: relative;
+    height: 42px;
+    width: calc(100% - 70px);
+    border: 1px solid #ccc;
+    padding: 0 13px;
+    border-radius: 10px 0 0 10px ;
+    font-size: 16px;
+    outline: none;
+    margin-left: 10px;
+
+    
+}
+form .sub{
+    width: 70px;
+    height: 42px;
+    color: white;
+    background-color: #333;
+    border-radius: 0 10px 10px 0;
+    border: 1px solid #444;
+    cursor: pointer;
+    margin-right: 10px;
+}
